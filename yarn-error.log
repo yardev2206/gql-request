@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn install
+
+PATH: 
+  /usr/lib/jvm/java-1.11.0-openjdk-amd64/bin:/home/hans/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/jdk-11.0.2/bin:/user/local/go/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.8.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/hans/Escritorio/gql-request/package.json: Unexpected token } in JSON at position 305
+      at JSON.parse (<anonymous>)
+      at /usr/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "gql-request",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Hans",
+    "license": "MIT",
+    "private": false,
+    "dependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-node": "0.0.1-security",
+      "babel-preset-env": "^1.7.0",
+      "graphql": "^14.5.7",
+      "node-fetch": "^2.6.0",
+    },
+    "scripts": {
+      "dev": "node index.js"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

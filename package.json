@@ -1,0 +1,12 @@
+{
+  "name": "gql-request",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hans",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "graphql": "^14.5.7",
+    "node-fetch": "^2.6.0"
+  }
+}
