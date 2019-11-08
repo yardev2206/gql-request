@@ -15,13 +15,45 @@ ejemplo
       }
    `;
    
-   client("localhost:3000/graqhl")
-    .then(res => consoñe.log(res))
+   client("localhost:3000/graphql")
+    .then(res => console.log(res))
     .catch(err => console.log(err));
 ```
 
 Salida
 
 ```
-  { data: message: "Hola mundo" }
+  { data:
+    { message: "Hola mundo" }
+  }
 ```
+
+
+pasando variables a la query
+
+``` js
+
+const query = `
+  query saludo($message: String!) {
+    saludo(message: $message)
+  }
+`;
+
+const variables = { message: "Hans" };
+
+client('localhost:3000/graphql', { variables })
+  .then(res => console.log(res))
+  .catch(err => console.log(err));
+
+```
+
+
+Salida
+```
+{
+  data: {
+    message: "Hola, Hans"
+  }
+}
+```
+
